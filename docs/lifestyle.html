@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- Title -->
+    <!-- TO DO change to your title -->
+    <title >Class of 2023 Freshman Surveyr</title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON" href="https://iili.io/JAYjzEG.png">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <!-- see how bootstrap works: https://getbootstrap.com/docs/5.1/getting-started/introduction/ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> <!-- Bootstrap — for aligning text columns -->
+    <link rel="stylesheet" href="css/main.css"> <!-- default styles -->
+    <link rel="stylesheet" href="css/stylelifestyle.css"> <!-- Local stylesheet — put all your design choices here -->
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/ea52966d59.js" crossorigin="anonymous"></script>    
+
+    <!-- TO DO: SOCIAL CARDS — editors will help you with this, don't worry about it for now -->
+    <!-- BUT DONT FORGET ABOUT IT or your dom image won't show up on social media/texting -->
+    <!--Open Graph Card for social display (Be sure to change these!)-->
+    <meta property="og:url" content="http://vanderbilthustler.features.com/FreshmanSurvey2027/lifestyle"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Class of 2027 Freshman Survey | Lifestyle"/> <!-- headline -->
+    <meta property="og:description" content="The Hustler surveys the Class of 2027"/> <!-- abstract -->
+    <meta property="og:site_name" content="The Hustler surveys the Class of 2027">
+    <meta property="og:image" content="https://iili.io/JAaBKSS.jpg"/> <!-- link to dominant image -->
+
+    <!--Twitter Social Card (Be sure to change these!)-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@VandyHustler">
+    <meta name="twitter:creator" content="@VandyHustler">
+    <meta name="twitter:title" content="Class of 2027 Freshman Survey"> <!-- headline -->
+    <meta name="twitter:description" content="The Hustler surveys the Class of 2027"> <!-- abstract -->
+    <meta name="twitter:image" content="https://iili.io/JAaBKSS.jpg"> <!-- dominant image -->
+
+</head>
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NBJX8F');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!--Header-->
+  <header>
+
+        <!-- Navbar -->
+            <!-- Navbar -->
+            <nav>
+                <ul>
+                    <li class="logo">
+                        <a href="https://www.vanderbilthustler.com">
+                            <img src="https://iili.io/JAYjzEG.png" alt="JAYjzEG.png" border="0">
+                        <a href="index.html" id="surveyLink"><h8>| Class of 2027 First Year Survey</h8></a>
+                    </li>
+                    <li class="toggle">
+                        <i class="fas fa-bars fa-lg"></i>
+                    </li>
+                    <li class="item dropdown">
+                        <h9 id="homeLabel">THE SURVEY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h9>
+                        <div class="dropdown-content">
+                        <a href="demographics.html"><h9>DEMOGRAPHICS</h9></a>
+                        <a href="high-school.html"><h9>HIGH SCHOOL</h9></a>
+                        <a href="admissions.html"><h9>ADMISSIONS</h9></a>
+                        <a href="college-life.html"><h9>COLLEGE LIFE</h9></a>
+                        <a href="politics.html"><h9>POLITICS</h9></a>
+                        <a href="lifestyle.html"><h9>LIFESTYLE</h9></a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="methodology.html">
+                            <h9 id="aboutLabel"> ABOUT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h9>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+
+        <!-- Headline, subhed -->
+        <!-- feel free to change this up — you don't need it to have data scroll speed, 
+        doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
+        <h1 data-scroll-speed="2">LIFESTYLE</h1>
+
+    </header> 
+
+    <script>
+        // Get the anchor element by its ID
+        var surveyLink = document.getElementById('surveyLink');
+    
+        // Check if the screen width is less than or equal to 768px (for mobile devices)
+        if (window.innerWidth <= 768) {
+            surveyLink.innerHTML = '<h8> | Home </h8>'; // Change the text content
+        }
+    </script>
+    
+    <script>
+        // Get the anchor element by its ID
+        var surveyLink = document.getElementById('aboutLabel');
+    
+        // Check if the screen width is less than or equal to 768px (for mobile devices)
+        if (window.innerWidth <= 768) {
+            surveyLink.innerHTML = '<h9> ABOUT&nbsp; </h9>'; // Change the text content
+        }
+    </script>
+
+    <script>
+        // Get the anchor element by its ID
+        var surveyLink = document.getElementById('homeLabel');
+
+        // Check if the screen width is less than or equal to 768px (for mobile devices)
+        if (window.innerWidth <= 768) {
+            surveyLink.innerHTML = '<h9> THE SURVEY&nbsp; </h9>'; // Change the text content
+        }
+    </script>
+
+
+    <!-- main article -->
+    <main>
+        <article class="container">
+            <div class="row justify-content-center">
+            <div class="col-md-6 story"> 
+    
+                <p><small><em>Commons Dining Hall, as photographed on Nov. 2, 2022. (Hustler Multimedia/Chloe Postlewaite)</em></small></p>
+                <p>
+                    The Hustler also asked first years about their previous lifestyle experiences before arriving at Vanderbilt. Respondents were asked about their sexual habits, relationships and substance usage. The findings show a wide range of experiences at the start of college.
+                </p>
+                <p>
+                    “It is important for [first years] to see a wide range of lifestyles and experiences because this diversity resembles the real world,” first-year Whitney Childs said.
+                </p>
+                <p>
+                    Under a third (31%) of first years reported having previously had sex, while 61% reported they have not. The remaining 9% of respondents preferred not to say.
+                </p>
+                <p>
+                    The majority (62%) of respondents reported that they have been in at least one exclusive romantic relationship, but 38% said they have not.
+                </p>
+        
+                <section class="box-container">
+                    <div class="box" onclick="changeChart0('ErCY9', '1');">
+                        <h5>SEXUAL ACTIVITY</h5>
+                    </div>
+                    <div class="box" onclick="changeChart0('4UQ76','1');">
+                        <h5>ROMANTIC RELATIONSHIPS</h5>
+                    </div>
+                </section>
+                
+                <section class="graph-container">
+                    <figure class="big-image">
+                        <div class="chart-container" id="chartContainer1"><script type="text/javascript" charset="utf-8"></script></div>
+                    </figure>
+                </section>
+
+                <p>
+                    As far as substance usage goes, over half (56%) of respondents reported drinking alcohol at least once per semester, but only about a quarter (26%) said they use marijuana at least once per semester. 3% of students had tried a drug other than alcohol or marijuana, such as LSD (3%) and Adderall (2%).
+                </p>
+
+                <p>
+                    In contrast, 96% of the outgoing senior Class of 2023 consumed alcohol at least once a semester, with most consuming it once a week, and 54% consumed marijuana at least once a semester.
+                </p>
+                
+                <section class="box-container">
+                    <div class="box" onclick="changeChart0('ZeroK','2');">
+                        <h5>ALCOHOL/MARIJUANA</h5>
+                    </div>
+                </section>
+                
+                <section class="graph-container">
+                    <figure class="big-image">
+                        <div class="chart-container" id="chartContainer2"><script type="text/javascript" charset="utf-8"></script></div>
+                    </figure>
+                </section>
+
+                <p>
+                    Connecticut is the most popular state for fake IDs, followed by New York, Illinois, California, Georgia and Texas, but only about a third of first years reported ever having a fake ID.
+                </p>
+                
+                <section class="box-container">
+                    <div class="box" onclick="changeChart0('taQ7a','3');">
+                        <h5>FAKE ID</h5>
+                    </div>
+                </section>
+                
+
+                <section class="graph-container">
+                    <figure class="big-image">
+                        <div class="chart-container" id="chartContainer3"><script type="text/javascript" charset="utf-8"></script></div>
+                    </figure>
+                </section>
+
+            </div>
+            </div>
+    </article>
+</main>
+
+<script>
+        
+    function changeChart0(chartId, containerId) {
+        var container = document.getElementById('chartContainer' + containerId);
+        container.innerHTML = ''; // Clear previous content if any
+        var script = document.createElement('script');
+        script.src = 'https://datawrapper.dwcdn.net/' + chartId + '/embed.js';
+        script.async = true;
+        container.appendChild(script);
+
+    } 
+
+    function firstGraph() {
+        // Call the changeChart function with the chartId for 'GENDER'
+        changeChart0('ErCY9', '1');
+        changeChart0('ZeroK', '2');
+        changeChart0('taQ7a', '3');
+    }
+
+    window.onload = firstGraph();
+
+    
+</script>
+
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-3 text-center"> <!-- Center the content in the column -->
+                    <a href="https://www.vanderbilthustler.com">
+                        <img src="https://iili.io/JAYjzEG.png" alt="JAYjzEG.png" class="footer-logo">
+                    </a>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center"> <!-- Center the content in the column -->
+                    <a href="methodology.html">
+                        <h7>ABOUT THE PROJECT</h7>
+                    </a>
+                    <p style="margin-top: 10px;"><small>&copy; Copyright 2023 The Vanderbilt Hustler</small></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ids.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+
+
+header {
+  /* add header image below */
+  /* can use a file path before the photo is uploaded to ceo */
+  background: url("https://iili.io/JAEEELF.jpg alt='A classs of about ten students sits in the shade in Library Lawn in front of a sculpture.'"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top; /* adjusts image placement, can also be set as percentages */
+
+
+  /* note: there are many alternative ways to style the header
+      other than a photo and 2 headlines. 
+
+      Here are some other IDS examples, you can inspect the code to 
+      see how they did it: 
+
+      Headlines that fade in: http://specials.idsnews.com/iu-kappa-kappa-gamma-sorority-hazing-big-little/
+      Header with a video: http://specials.idsnews.com/bloomington-bluebird-bar-coronavirus-guidelines/
+      Animated header: http://specials.idsnews.com/iu-president-michael-mcrobbie-speeches-gpt-2/
+      Another animated/fade-in header: http://specials.idsnews.com/steve-moore-almost-died-coronavirus-bloomington/
+      Header with multiple photos: http://specials.idsnews.com/what-wasnt-said-racism-indiana-university-bloomington-iu/
+      Dramatic photo header: http://specials.idsnews.com/iu-coronavirus-testing/
+      Cute animation header: http://specials.idsnews.com/will-your-mail-in-ballot-arrive-in-time-to-count-usps-election-2020/index.html
+      Cool typography (from W+P): http://specials.idsnews.com/a-little-less-than-kind-iu-theater-bloomington/index.html
+      Not full width header: http://specials.idsnews.com/how-iu-does-its-laundry/
+  */
+}
+
+/* SET ANY MORE STYLES YOU WANT HERE: */
+
+.box-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.box {
+width: auto;
+margin: 10px;
+padding-top: 7px;
+padding-left: 20px;
+padding-right: 20px;
+background-color: #8E6600;
+border: 4px solid #000000;
+text-align: center;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+.box:hover {
+background-color: #F2EEE3;
+}
+
+.graph-container {
+text-align: center;
+}
+
+.graph-container {
+width: 100%; /* Take the full width */
+max-width: 800px; /* Set your desired max-width */
+margin: 0 auto;   /* Center the container */
+}
+
+.active {
+background-color: #8E6600;
+color: #F2EEE3; /* You might want to change the text color for better visibility */
+}
+
+
+.footer-logo {
+max-width: 20%; /* Ensure the image doesn't exceed its container */
+height: auto; /* Maintain the image's aspect ratio */
+display: block; /* Remove extra space below the image */
+margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Optional: Add some space around the image */
+.container {
+padding-top: 4px;
+padding-bottom: 8px;
+}
+
+footer .col-md-3 {
+margin-bottom: 20px; /* Adjust the value for the desired space */
+}
+
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* use these for responsive design — you can set different styles based on how wide the screen is */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  header {
+      /* adjust header image positioning for larger devices if needed */
+      /* you can also change the header image for mobile here */
+      /* background-position: 50% 50%; */
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}

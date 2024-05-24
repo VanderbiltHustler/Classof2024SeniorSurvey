@@ -1,0 +1,152 @@
+/* COLORS */
+/* set any colors you plan to use throughout the buildout here */
+/* then you can adjust the color value easily */
+:root {
+
+    body {
+        background-color: #D6B464;
+    }
+
+}
+
+header {
+    /* add header image below */
+    /* can use a file path before the photo is uploaded to ceo */
+    background: url('https://iili.io/JAQZh2s.jpg" alt="JAY4ZPV.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; /* adjusts image placement, can also be set as percentages */
+
+    /* note: there are many alternative ways to style the header
+        other than a photo and 2 headlines. 
+
+        Here are some other IDS examples, you can inspect the code to 
+        see how they did it: 
+
+        Headlines that fade in: http://specials.idsnews.com/iu-kappa-kappa-gamma-sorority-hazing-big-little/
+        Header with a video: http://specials.idsnews.com/bloomington-bluebird-bar-coronavirus-guidelines/
+        Animated header: http://specials.idsnews.com/iu-president-michael-mcrobbie-speeches-gpt-2/
+        Another animated/fade-in header: http://specials.idsnews.com/steve-moore-almost-died-coronavirus-bloomington/
+        Header with multiple photos: http://specials.idsnews.com/what-wasnt-said-racism-indiana-university-bloomington-iu/
+        Dramatic photo header: http://specials.idsnews.com/iu-coronavirus-testing/
+        Cute animation header: http://specials.idsnews.com/will-your-mail-in-ballot-arrive-in-time-to-count-usps-election-2020/index.html
+        Cool typography (from W+P): http://specials.idsnews.com/a-little-less-than-kind-iu-theater-bloomington/index.html
+        Not full width header: http://specials.idsnews.com/how-iu-does-its-laundry/
+    */
+}
+
+
+/* SET ANY MORE STYLES YOU WANT HERE: */
+.arrow-container {
+  position: fixed;
+  bottom: 190px; /* Adjust the bottom position as needed */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.arrow-container img {
+  max-width: 90%; /* Ensure the arrow's width is responsive */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.box {
+  width: 30%;
+  margin: 10px;
+  padding: 7px;
+  background-color: #8E6600;
+  border: 4px solid #000000;
+  text-align: center;
+  padding-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  overflow-wrap: break-word; /* Alternative property for better word wrap */
+}
+
+.box:hover {
+  background-color: #F2EEE3;
+}
+
+.dropdown {
+  display: none; /* Initially hide the dropdown */
+  position: absolute; /* Position the dropdown */
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #f1f1f1;
+}
+
+.footer-logo {
+  max-width: 20%; /* Ensure the image doesn't exceed its container */
+  height: auto; /* Maintain the image's aspect ratio */
+  display: block; /* Remove extra space below the image */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Optional: Add some space around the image */
+.container {
+  padding-top: 4px;
+  padding-bottom: 8px;
+}
+
+footer .col-md-3 {
+  margin-bottom: 20px; /* Adjust the value for the desired space */
+}
+
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* use these for responsive design — you can set different styles based on how wide the screen is */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+/*@media (min-width: 576px) { 
+    
+} */
+
+@media (max-width: 1000px) {
+  header {
+    background: url('https://iili.io/JAQZh2s.jpg alt="Four students lounge on Alumni Lawn on a sunny day with their backs to the camera. One student in the background sits with a laptop on a blue chair."');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+/*@media (min-width: 768px) {
+    header {
+        /* adjust header image positioning for larger devices if needed */
+        /* you can also change the header image for mobile here */
+        /* background-position: 50% 50%; 
+    } 
+  }
+*/
+
+
+/* Large devices (desktops, 992px and up) */
+/*@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+/*@media (min-width: 1200px) {
+
+}
+*/

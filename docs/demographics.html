@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- Title -->
+    <!-- TO DO change to your title -->
+    <title >Class of 2023 Freshman Surveyr</title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON" href="https://iili.io/JAYjzEG.png">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <!-- see how bootstrap works: https://getbootstrap.com/docs/5.1/getting-started/introduction/ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> <!-- Bootstrap — for aligning text columns -->
+    <link rel="stylesheet" href="css/main.css"> <!-- default styles -->
+    <link rel="stylesheet" href="css/styledemographics.css"> <!-- Local stylesheet — put all your design choices here -->
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/ea52966d59.js" crossorigin="anonymous"></script>    
+
+    <!-- TO DO: SOCIAL CARDS — editors will help you with this, don't worry about it for now -->
+    <!-- BUT DONT FORGET ABOUT IT or your dom image won't show up on social media/texting -->
+    <!--Open Graph Card for social display (Be sure to change these!)-->
+    <meta property="og:url" content="http://specials.idsnews.com/url"/> <!-- URL (specials.idsnews.com/blah-blah-blah) -->
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Headline"/> <!-- headline -->
+    <meta property="og:description" content="Abstract"/> <!-- abstract -->
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image" content=""/> <!-- link to dominant image -->
+
+    <!--Twitter Social Card (Be sure to change these!)-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="Headline"> <!-- headline -->
+    <meta name="twitter:description" content="Abstract"> <!-- abstract -->
+    <meta name="twitter:image" content=""> <!-- dominant image -->
+
+</head>
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NBJX8F');
+    </script>
+    <!-- End Google Tag Manager -->
+
+
+    <!--Header-->
+  <header>
+
+        <!-- Navbar -->
+            <!-- Navbar -->
+            <nav>
+                <ul>
+                    <li class="logo">
+                        <a href="https://www.vanderbilthustler.com">
+                            <img src="https://iili.io/JAYjzEG.png" alt="JAYjzEG.png" border="0">
+                        <a href="index.html" id="surveyLink"><h8>| Class of 2027 First Year Survey</h8></a>
+                    </li>
+                    <li class="toggle">
+                        <i class="fas fa-bars fa-lg"></i>
+                    </li>
+                    <li class="item dropdown">
+                        <h9 id="homeLabel">THE SURVEY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h9>
+                        <div class="dropdown-content">
+                        <a href="demographics.html"><h9>DEMOGRAPHICS</h9></a>
+                        <a href="high-school.html"><h9>HIGH SCHOOL</h9></a>
+                        <a href="admissions.html"><h9>ADMISSIONS</h9></a>
+                        <a href="college-life.html"><h9>COLLEGE LIFE</h9></a>
+                        <a href="politics.html"><h9>POLITICS</h9></a>
+                        <a href="lifestyle.html"><h9>LIFESTYLE</h9></a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="methodology.html">
+                            <h9 id="aboutLabel"> ABOUT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h9>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <script>
+                // Get the anchor element by its ID
+                var surveyLink = document.getElementById('surveyLink');
+            
+                // Check if the screen width is less than or equal to 768px (for mobile devices)
+                if (window.innerWidth <= 768) {
+                    surveyLink.innerHTML = '<h8> | Home </h8>'; // Change the text content
+                }
+            </script>
+            
+            <script>
+                // Get the anchor element by its ID
+                var surveyLink = document.getElementById('aboutLabel');
+            
+                // Check if the screen width is less than or equal to 768px (for mobile devices)
+                if (window.innerWidth <= 768) {
+                    surveyLink.innerHTML = '<h9> ABOUT&nbsp; </h9>'; // Change the text content
+                }
+            </script>
+        
+            <script>
+                // Get the anchor element by its ID
+                var surveyLink = document.getElementById('homeLabel');
+        
+                // Check if the screen width is less than or equal to 768px (for mobile devices)
+                if (window.innerWidth <= 768) {
+                    surveyLink.innerHTML = '<h9> THE SURVEY&nbsp; </h9>'; // Change the text content
+                }
+            </script>
+
+        <!-- Headline, subhed -->
+        <!-- feel free to change this up — you don't need it to have data scroll speed, 
+        doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
+        <h1 data-scroll-speed="2">DEMOGRAPHICS</h1>
+
+    </header> 
+
+
+    <!-- main article -->
+    <main>
+        <article class="container">
+            <div class="row justify-content-center">
+            <div class="col-md-6 story"> 
+    
+                <p><small><em>Students sit on Library Lawn, as captured on Nov. 4, 2022. (Hustler Multimedia/Laura Vaughan)</em></small></p>
+                <p>
+                    In the survey, approximately 56% of respondents identified as women, 42% as men and 2% as nonbinary or gender-nonconforming. The racial and ethnic breakdown of respondents yielded a majority white/Caucasian cohort (64%) compared to 30% African American/Black, 29% Asian/Pacific Islander, 4% Middle Eastern/North African and 3% Native American/Alaskan Native.  
+                </p>
+                <p>
+                    Evan Houser, first-year Black Student Association representative, said that despite the Supreme Court’s <a href="https://vanderbilthustler.com/2023/07/25/vanderbilt-community-reacts-to-supreme-court-striking-down-affirmative-action/">recent end to affirmative action</a>, he expects the percentage of racial and ethnic minority students at Vanderbilt to increase in future years due to the United States’ growing diversity. 
+                </p>
+                <p>
+                    “I believe all the minorities at Vanderbilt were accepted on their merit and accomplishments and not because of affirmative action,” Houser said. “I trust Vanderbilt will continue to create a diverse student population and environment and believe this ruling will have minimal effect on Vanderbilt’s racial composition.”
+                </p>
+                <p>
+                    Students were given the opportunity to select multiple race category options, with 12% of students identifying as multiracial. Thirty-eight students identified their ethnicity as Hispanic/Latino.
+                </p>
+                <p>
+                    Respondents also shared their sexuality in the survey, with nearly 78% identifying as heterosexual, 12% as bisexual or pansexual, 5% as gay or lesbian and 5% as questioning or unsure. 
+                </p>
+                
+                <section class="box-container">
+                    <div class="box" onclick="changeChart0('iaexy', '1');">
+                        <h5>GENDER</h5>
+                    </div>
+                    <div class="box" onclick="changeChart0('7nwpv','1');">
+                        <h5>RACE</h5>
+                    </div>
+                    <div class="box" onclick="changeChart0('EdN3u','1');">
+                        <h5>SEXUALITY</h5>
+                    </div>
+                </section>
+                
+                <section class="graph-container">
+                    <figure class="big-image">
+                        <div class="chart-container" id="chartContainer1"><script type="text/javascript" charset="utf-8"></script></div>
+                    </figure>
+                </section>
+
+                <p>
+                    The five most popular states from which domestic students hail are Tennessee (46%), Texas (30%), California (23%), New York (21%) and Florida (19%). Of the 7% of international students in the Class of 2027, most are from Asia.
+                </p>
+                <p>
+                    “I believe there are a lot of expectations among first years, especially those who have not had these experiences, that college is not only their first chance but the place where they have to engage in them,” first-year Teo Kitanovski said. “As an international student, this has been very interesting to me since these are things that a lot of my peers experienced earlier, and ironically a bit more naturally, whereas here everyone seems to be under pressure.”
+                </p>
+
+                <section class="box-container">
+                    <div class="box" onclick="changeChart0('JRgz4','2');">
+                        <h5>HOME STATE</h5>
+                    </div>
+                    <div class="box" onclick="changeChart0('n39GM','2');">
+                        <h5>DOMESTIC/INTERNATIONAL</h5>
+                </section>
+                
+                <section class="graph-container">
+                    <figure class="big-image">
+                        <div class="chart-container" id="chartContainer2"><script type="text/javascript" charset="utf-8"></script></div>
+                    </figure>
+                </section>
+
+                <p>
+                    Of the students surveyed, just over 2% are athletes or members of ROTC. ROTC enrollees can be scholarship winners or not, and they must serve four years or three years in the Army after graduation, respectively. Approximately 4% of students identified as living with a disability. 
+
+                </p>
+
+                <section class="box-container">
+                    <div class="box" onclick="changeChart0('jB86Q','3');">
+                        <h5>ROTC</h5>
+                    </div>
+                    <div class="box" onclick="changeChart0('CT1FI','3');">
+                        <h5>ATHLETES</h5>
+                </section>
+                
+                <section class="graph-container">
+                    <figure class="big-image">
+                        <div class="chart-container" id="chartContainer3"><script type="text/javascript" charset="utf-8"></script></div>
+                    </figure>
+                </section>
+
+            </div>
+            </div>
+    </article>
+</main>
+
+<script>
+        
+    function changeChart0(chartId, containerId) {
+        var container = document.getElementById('chartContainer' + containerId);
+        container.innerHTML = ''; // Clear previous content if any
+        var script = document.createElement('script');
+        script.src = 'https://datawrapper.dwcdn.net/' + chartId + '/embed.js';
+        script.async = true;
+        container.appendChild(script);
+
+    } 
+
+    function firstGraph() {
+        // Call the changeChart function with the chartId for 'GENDER'
+        changeChart0('iaexy', '1');
+        changeChart0('JRgz4', '2');
+        changeChart0('jB86Q', '3');
+
+    }
+
+    window.onload = firstGraph();
+
+    
+</script>
+
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-3 text-center"> <!-- Center the content in the column -->
+                    <a href="https://www.vanderbilthustler.com">
+                        <img src="https://iili.io/JAYjzEG.png" alt="JAYjzEG.png" class="footer-logo">
+                    </a>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center"> <!-- Center the content in the column -->
+                    <a href="methodology.html">
+                        <h7>ABOUT THE PROJECT</h7>
+                    </a>
+                    <p style="margin-top: 10px;"><small>&copy; Copyright 2023 The Vanderbilt Hustler</small></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ids.js"></script>
+</body>
+</html>

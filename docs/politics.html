@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- Title -->
+    <!-- TO DO change to your title -->
+    <title >Class of 2023 Freshman Surveyr</title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON" href="https://iili.io/JAYjzEG.png">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <!-- see how bootstrap works: https://getbootstrap.com/docs/5.1/getting-started/introduction/ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> <!-- Bootstrap — for aligning text columns -->
+    <link rel="stylesheet" href="css/main.css"> <!-- default styles -->
+    <link rel="stylesheet" href="css/stylepolitics.css"> <!-- Local stylesheet — put all your design choices here -->
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/ea52966d59.js" crossorigin="anonymous"></script>    
+
+    <!-- TO DO: SOCIAL CARDS — editors will help you with this, don't worry about it for now -->
+    <!-- BUT DONT FORGET ABOUT IT or your dom image won't show up on social media/texting -->
+    <!--Open Graph Card for social display (Be sure to change these!)-->
+    <meta property="og:url" content="http://vanderbilthustler.features.com/FreshmanSurvey2027/politics"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Class of 2027 Freshman Survey | Politics"/> <!-- headline -->
+    <meta property="og:description" content="The Hustler surveys the Class of 2027"/> <!-- abstract -->
+    <meta property="og:site_name" content="The Hustler surveys the Class of 2027">
+    <meta property="og:image" content="https://iili.io/JAaBKSS.jpg"/> <!-- link to dominant image -->
+
+    <!--Twitter Social Card (Be sure to change these!)-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@VandyHustler">
+    <meta name="twitter:creator" content="@VandyHustler">
+    <meta name="twitter:title" content="Class of 2027 Freshman Survey"> <!-- headline -->
+    <meta name="twitter:description" content="The Hustler surveys the Class of 2027"> <!-- abstract -->
+    <meta name="twitter:image" content="https://iili.io/JAaBKSS.jpg"> <!-- dominant image -->
+
+</head>
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NBJX8F');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!--Header-->
+  <header>
+
+        <!-- Navbar -->
+            <!-- Navbar -->
+            <nav>
+                <ul>
+                    <li class="logo">
+                        <a href="https://www.vanderbilthustler.com">
+                            <img src="https://iili.io/JAYjzEG.png" alt="JAYjzEG.png" border="0">
+                        <a href="index.html" id="surveyLink"><h8>| Class of 2027 First Year Survey</h8></a>
+                    </li>
+                    <li class="toggle">
+                        <i class="fas fa-bars fa-lg"></i>
+                    </li>
+                    <li class="item dropdown">
+                        <h9 id="homeLabel">THE SURVEY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h9>
+                        <div class="dropdown-content">
+                        <a href="demographics.html"><h9>DEMOGRAPHICS</h9></a>
+                        <a href="high-school.html"><h9>HIGH SCHOOL</h9></a>
+                        <a href="admissions.html"><h9>ADMISSIONS</h9></a>
+                        <a href="college-life.html"><h9>COLLEGE LIFE</h9></a>
+                        <a href="politics.html"><h9>POLITICS</h9></a>
+                        <a href="lifestyle.html"><h9>LIFESTYLE</h9></a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="methodology.html">
+                            <h9 id="aboutLabel"> ABOUT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h9>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        <!-- Headline, subhed -->
+        <!-- feel free to change this up — you don't need it to have data scroll speed, 
+        doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
+        <h1 data-scroll-speed="2">POLITICS</h1>
+
+    </header> 
+
+    <script>
+        // Get the anchor element by its ID
+        var surveyLink = document.getElementById('surveyLink');
+    
+        // Check if the screen width is less than or equal to 768px (for mobile devices)
+        if (window.innerWidth <= 768) {
+            surveyLink.innerHTML = '<h8> | Home </h8>'; // Change the text content
+        }
+    </script>
+    
+    <script>
+        // Get the anchor element by its ID
+        var surveyLink = document.getElementById('aboutLabel');
+    
+        // Check if the screen width is less than or equal to 768px (for mobile devices)
+        if (window.innerWidth <= 768) {
+            surveyLink.innerHTML = '<h9> ABOUT&nbsp; </h9>'; // Change the text content
+        }
+    </script>
+
+    <script>
+        // Get the anchor element by its ID
+        var surveyLink = document.getElementById('homeLabel');
+
+        // Check if the screen width is less than or equal to 768px (for mobile devices)
+        if (window.innerWidth <= 768) {
+            surveyLink.innerHTML = '<h9> THE SURVEY&nbsp; </h9>'; // Change the text content
+        }
+    </script>
+
+    <!-- main article -->
+    <main>
+        <article class="container">
+            <div class="row justify-content-center">
+            <div class="col-md-6 story"> 
+    
+                <p><small><em>A person walks a dog across campus, as photographed on Feb. 20, 2023. (Hustler Multimedia/Narenkumar Thirmiya)</em></small></p>
+                <p>
+                    63% of the Class of 2027 identified as liberal in some way, while 21% identified as neutral and 16% identified as conservative in some way. This means the Class of 2027 is more conservative than the <a href="https://vanderbilthustler.com/2023/08/21/class-of-2023-the-senior-survey/">outgoing senior Class of 2023</a>. However, the Class of 2023 became more liberal during their studies, going from 65% liberal to 76% liberal.
+                </p>
+                <p>
+                    46% of the Class of 2027 vote in their home state or country, while 9% vote in Tennessee. 12% are not eligible to vote, either because of age or citizenship restrictions. This represents a much higher turnout than the <a href="https://circle.tufts.edu/2022-election-center">national average</a> for 18-29 year olds, which 23% voted in the 2022 elections.
+                </p>
+
+                <section class="box-container">
+                    <div class="box" onclick="changeChart0('EccNF', '1');">
+                        <h5>IDEOLOGY</h5>
+                    </div>
+                    <div class="box" onclick="changeChart0('AyQal','1');">
+                        <h5>VOTER TURNOUT</h5>
+                    </div>
+                </section>
+                
+                <section class="graph-container">
+                    <figure class="big-image">
+                        <div class="chart-container" id="chartContainer1"><script type="text/javascript" charset="utf-8"></script></div>
+                    </figure>
+                </section>
+
+                <p>
+                    The most popular campus political policy was divesting from fossil fuels, which 58% of students supported. The least popular political position was that Greek life should be abolished, which only 16% of students supported. This is in sharp contrast with the outgoing senior Class of 2023, of which 44% of students supported abolishing Greek life. About a fifth of students thought administration should take stances on political issues.
+                </p>
+
+                <p>
+                    About 41% of students support affirmative action, while only 12% support legacy admissions. The Class of 2028 is the first since the <a href="https://vanderbilthustler.com/2023/12/15/diversity-in-vanderbilt-admissions-post-affirmative-action-and-2024-u-s-news-ranking/">implementation of affirmative action</a> where the policy will not be considered in <a href="https://vanderbilthustler.com/2024/01/01/vanderbilt-application-question-about-civil-discourse-added-to-reflect-shifting-university-values-affirmative-action-ban/">Vanderbilt’s admission process</a>.
+                </p>
+
+                <p>
+                    Houser said that though the Supreme Court’s decision on affirmative action attempted to “equal the playing field,” in reality it fails to address the “real issue” of race in college admissions. He specifically pointed to the lack of resources among African American and other racial and ethnic minority students in K-12 schooling. 
+                </p>
+                
+                <p>
+                    “The majority of these school systems are underfunded and don’t have the means to support and allow their students to excel and succeed truly,” Houser said. “If instead there was a decision to give more funding and resources to support African American and other minority students I would be more in support, but alas the central issue is still present and the government’s efforts to reduce the issues are incredibly lackluster.”
+                </p>
+                <p>
+                    In a Nov. 17 <a href="https://vanderbilthustler.com/2023/12/06/vanderbilt-edi-efforts-decentralized-in-favor-of-layered-collaborative-approach/">conversation with The Hustler</a>, and Vice Provost of Academic Affairs Tiffiny Tung spoke on Vanderbilt’s “core value” of student body diversity. Black pointed to the “fundamental” role of diversity in education and research, while Tung discussed university initiatives — notably the expansion of Vanderbilt’s partnership with the <a href="https://vanderbilthustler.com/2023/10/13/vanderbilt-expands-partnership-with-posse-foundation/">Posse Foundation</a> — that aim to ensure diversity in admissions post-affirmative action. 
+                </p>
+                <p>
+                    First-year Evan Houser expressed appreciation for these efforts and suggested additional measures he believes Vanderbilt should take to combat potential effects of the ruling. 
+                </p>
+                <p>
+                    “New ways to allow disadvantaged students to afford a college education and then participate in transformative educational experiences should do well. I believe Vanderbilt should also donate to underserved and poorer school systems to allow these disadvantaged students to have a level playing field with their counterparts,” Houser said.
+                </p>
+                <p>
+                    The most popular political position is stricter gun control, of which 81% of first years support. 76% support expanded abortion access and 55% support gender-affirming healthcare for minors.
+                </p>
+                
+                <section class="box-container">
+                    <div class="box" onclick="changeChart0('6Y5TG','2');">
+                        <h5>CAMPUS ISSUES</h5>
+                    </div>
+                    <div class="box" onclick="changeChart0('FdL64','2');">
+                        <h5>POLITICAL ISSUES</h5>
+                    </div>
+                </section>
+                
+                <section class="graph-container">
+                    <figure class="big-image">
+                        <div class="chart-container" id="chartContainer2"><script type="text/javascript" charset="utf-8"></script></div>
+                    </figure>
+                </section>
+
+                <p>
+                    Opinions on political issues were highly divided based on the political ideology of the student, with an approximately 50-point margin separating conservative and liberal students on each issue.
+                </p>
+                <p>
+                    Non-legacy students were more likely to oppose using legacy admissions in the admissions (79%) projects than students who had siblings, parents or extended family who also attended Vanderbilt (55%).
+                </p>
+
+                <section class="box-container">
+                    <div class="box" onclick="changeChart0('1MWi8','3');">
+                        <h5>POLITICAL ISSUES/POLITICAL IDEOLOGY</h5>
+                    </div>
+                    <div class="box" onclick="changeChart0('HdRhS','3');">
+                        <h5>LEGACY STATUS/LEGACY ADMISSIONS</h5>
+                    </div>
+                </section>
+                
+                <section class="graph-container">
+                    <figure class="big-image">
+                        <div class="chart-container" id="chartContainer3"><script type="text/javascript" charset="utf-8"></script></div>
+                    </figure>
+                </section>
+
+            </div>
+            </div>
+    </article>
+</main>
+
+<script>
+        
+    function changeChart0(chartId, containerId) {
+        var container = document.getElementById('chartContainer' + containerId);
+        container.innerHTML = ''; // Clear previous content if any
+        var script = document.createElement('script');
+        script.src = 'https://datawrapper.dwcdn.net/' + chartId + '/embed.js';
+        script.async = true;
+        container.appendChild(script);
+
+    } 
+
+    function firstGraph() {
+        // Call the changeChart function with the chartId for 'GENDER'
+        changeChart0('EccNF', '1');
+        changeChart0('6Y5TG', '2');
+        changeChart0('1MWi8', '3');
+    }
+
+    window.onload = firstGraph();
+
+    
+</script>
+
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-3 text-center"> <!-- Center the content in the column -->
+                    <a href="https://www.vanderbilthustler.com">
+                        <img src="https://iili.io/JAYjzEG.png" alt="JAYjzEG.png" class="footer-logo">
+                    </a>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center"> <!-- Center the content in the column -->
+                    <a href="methodology.html">
+                        <h7>ABOUT THE PROJECT</h7>
+                    </a>
+                    <p style="margin-top: 10px;"><small>&copy; Copyright 2023 The Vanderbilt Hustler</small></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ids.js"></script>
+</body>
+</html>

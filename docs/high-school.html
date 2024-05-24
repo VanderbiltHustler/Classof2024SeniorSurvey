@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- Title -->
+    <!-- TO DO change to your title -->
+    <title >Class of 2023 Freshman Surveyr</title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON" href="https://iili.io/JAYjzEG.png">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <!-- see how bootstrap works: https://getbootstrap.com/docs/5.1/getting-started/introduction/ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> <!-- Bootstrap — for aligning text columns -->
+    <link rel="stylesheet" href="css/main.css"> <!-- default styles -->
+    <link rel="stylesheet" href="css/stylehighschool.css"> <!-- Local stylesheet — put all your design choices here -->
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/ea52966d59.js" crossorigin="anonymous"></script>    
+
+    <!-- TO DO: SOCIAL CARDS — editors will help you with this, don't worry about it for now -->
+    <!-- BUT DONT FORGET ABOUT IT or your dom image won't show up on social media/texting -->
+    <!--Open Graph Card for social display (Be sure to change these!)-->
+    <meta property="og:url" content="http://vanderbilthustler.features.com/FreshmanSurvey2027/high-school"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Class of 2027 Freshman Survey | High School"/> <!-- headline -->
+    <meta property="og:description" content="The Hustler surveys the Class of 2027"/> <!-- abstract -->
+    <meta property="og:site_name" content="The Hustler surveys the Class of 2027">
+    <meta property="og:image" content="https://iili.io/JAaBKSS.jpg"/> <!-- link to dominant image -->
+
+    <!--Twitter Social Card (Be sure to change these!)-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@VandyHustler">
+    <meta name="twitter:creator" content="@VandyHustler">
+    <meta name="twitter:title" content="Class of 2027 Freshman Survey"> <!-- headline -->
+    <meta name="twitter:description" content="The Hustler surveys the Class of 2027"> <!-- abstract -->
+    <meta name="twitter:image" content="https://iili.io/JAaBKSS.jpg"> <!-- dominant image -->
+
+</head>
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NBJX8F');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!--Header-->
+  <header>
+
+        <!-- Navbar -->
+            <!-- Navbar -->
+            <nav>
+                <ul>
+                    <li class="logo">
+                        <a href="https://www.vanderbilthustler.com">
+                            <img src="https://iili.io/JAYjzEG.png" alt="JAYjzEG.png" border="0">
+                        <a href="index.html" id="surveyLink"><h8>| Class of 2027 First Year Survey</h8></a>
+                    </li>
+                    <li class="toggle">
+                        <i class="fas fa-bars fa-lg"></i>
+                    </li>
+                    <li class="item dropdown">
+                        <h9 id="homeLabel">THE SURVEY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h9>
+                        <div class="dropdown-content">
+                        <a href="demographics.html"><h9>DEMOGRAPHICS</h9></a>
+                        <a href="high-school.html"><h9>HIGH SCHOOL</h9></a>
+                        <a href="admissions.html"><h9>ADMISSIONS</h9></a>
+                        <a href="college-life.html"><h9>COLLEGE LIFE</h9></a>
+                        <a href="politics.html"><h9>POLITICS</h9></a>
+                        <a href="lifestyle.html"><h9>LIFESTYLE</h9></a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="methodology.html">
+                            <h9 id="aboutLabel"> ABOUT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h9>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+
+        <!-- Headline, subhed -->
+        <!-- feel free to change this up — you don't need it to have data scroll speed, 
+        doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
+        <h1 data-scroll-speed="2">HIGH SCHOOL</h1>
+
+    </header> 
+
+    <script>
+        // Get the anchor element by its ID
+        var surveyLink = document.getElementById('surveyLink');
+    
+        // Check if the screen width is less than or equal to 768px (for mobile devices)
+        if (window.innerWidth <= 768) {
+            surveyLink.innerHTML = '<h8> | Home </h8>'; // Change the text content
+        }
+    </script>
+    
+    <script>
+        // Get the anchor element by its ID
+        var surveyLink = document.getElementById('aboutLabel');
+    
+        // Check if the screen width is less than or equal to 768px (for mobile devices)
+        if (window.innerWidth <= 768) {
+            surveyLink.innerHTML = '<h9> ABOUT&nbsp; </h9>'; // Change the text content
+        }
+    </script>
+
+    <script>
+        // Get the anchor element by its ID
+        var surveyLink = document.getElementById('homeLabel');
+
+        // Check if the screen width is less than or equal to 768px (for mobile devices)
+        if (window.innerWidth <= 768) {
+            surveyLink.innerHTML = '<h9> THE SURVEY&nbsp; </h9>'; // Change the text content
+        }
+    </script>
+
+
+    <!-- main article -->
+    <main>
+        <article class="container">
+            <div class="row justify-content-center">
+            <div class="col-md-6 story"> 
+    
+                <p><small><em>Students study in the basement of the Mayborn Building, as captured on Jan. 26, 2023. (Hustler Multimedia/Laura Vaughan)</em></small></p>
+
+                <p>
+                    First years were asked about their high school experience in terms of academics and extracurriculars. 68% of students attended a public secondary school, 28% attended private secondary school, and the remaining students attended other types of secondary schools, including charter schools and homeschools. 
+                </p>
+                <p>
+                    Students accepted to Vanderbilt had been enrolled in a variety of advanced classes in high school, including AP, IP, Honors and Dual Enrollment Classes. 88% of students’ schools offered AP classes, 15% of schools offered IB classes, 86% of schools offered Honors classes and 70% of schools offered Dual Enrollment classes. The largest proportion of AP students and Honors students took 10+ classes.
+                </p>
+                
+                <section class="box-container">
+                    <div class="box" onclick="changeChart0('8aaz7', '1');">
+                        <h5>TYPE OF HIGH SCHOOL/HOUSEHOLD INCOME</h5>
+                    </div>
+                    <div class="box" onclick="changeChart0('bkq49','1');">
+                        <h5>ADVANCED CLASSES</h5>
+                    </div>
+                </section>
+                
+                <section class="graph-container">
+                    <figure class="big-image">
+                        <div class="chart-container" id="chartContainer1"><script type="text/javascript" charset="utf-8"></script></div>
+                    </figure>
+                </section>
+
+                <p>
+                    Respondents participated in a variety of extracurricular activities, varying both in number and type between each student. The most popular extracurricular activities included community service (79%), academic clubs and competitions (65%) and athletics (63%). The number of extracurricular activities participated in did not vary substantially across household incomes.
+                </p>
+                <p>
+                    “I was a member of my varsity high school dance team, a competition dance team, and I also taught dance classes,” first-year Emma Boualaphanh said. “Dance taught me a lot about time management skills and how to prioritize different events. Balancing being a full-time student and dancer prepared me for dancing in college while dealing with a college workload.”
+                </p>
+
+                <section class="box-container">
+                    <div class="box" onclick="changeChart0('MUcau','2');">
+                        <h5>EXTRACURRICULARS</h5>
+                    </div>
+                    <div class="box" onclick="changeChart0('2rvPb','2');">
+                        <h5>EXTRACURRICULARS/HOUSEHOLD INCOME</h5>
+                </section>
+                
+                <section class="graph-container">
+                    <figure class="big-image">
+                        <div class="chart-container" id="chartContainer2"><script type="text/javascript" charset="utf-8"></script></div>
+                    </figure>
+                </section>
+
+                <p>
+                    Almost a third (29%) of first years reported having used artificial intelligence on an academic assignment. First-year Alex Sheldon described AI as an “extremely useful tool” in a classroom setting.
+                </p>
+                <p>
+                    “My data science professor constantly reminded us throughout the semester that using tools like ChatGPT was allowed and even encouraged because it enabled us to learn course material with the assistance of real-world tools that we will have even greater access to in the next few years as it develops,” Sheldon said. “In my experience this semester, AI has not hindered my ability to think creatively or do work on my own but has simply acted as another search engine or tool in my learning.”
+                </p>
+
+                <section class="box-container">
+                    <div class="box" onclick="changeChart0('xbZUZ','3');">
+                        <h5>AI USE</h5>
+                    </div>
+                </section>
+                
+                <section class="graph-container">
+                    <figure class="big-image">
+                        <div class="chart-container" id="chartContainer3"><script type="text/javascript" charset="utf-8"></script></div>
+                    </figure>
+                </section>
+
+                <p>
+                    Only 2% of students reported taking a gap year between high school and college, while the remaining 98% went straight to college.
+                </p>
+
+                <section class="box-container">
+                    <div class="box" onclick="changeChart0('kPIlA','4');">
+                        <h5>GAP YEAR</h5>
+                    </div>
+                </section>
+                
+                <section class="graph-container">
+                    <figure class="big-image">
+                        <div class="chart-container" id="chartContainer4"><script type="text/javascript" charset="utf-8"></script></div>
+                    </figure>
+                </section>
+
+            </div>
+            </div>
+    </article>
+</main>
+
+<script>
+        
+    function changeChart0(chartId, containerId) {
+        var container = document.getElementById('chartContainer' + containerId);
+        container.innerHTML = ''; // Clear previous content if any
+        var script = document.createElement('script');
+        script.src = 'https://datawrapper.dwcdn.net/' + chartId + '/embed.js';
+        script.async = true;
+        container.appendChild(script);
+
+    } 
+
+    function firstGraph() {
+        // Call the changeChart function with the chartId for 'GENDER'
+        changeChart0('8aaz7', '1');
+        changeChart0('MUcau', '2');
+        changeChart0('xbZUZ', '3');
+        changeChart0('kPIlA', '4');
+
+    }
+
+    window.onload = firstGraph();
+
+    
+</script>
+
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-3 text-center"> <!-- Center the content in the column -->
+                    <a href="https://www.vanderbilthustler.com">
+                        <img src="https://iili.io/JAYjzEG.png" alt="JAYjzEG.png" class="footer-logo">
+                    </a>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center"> <!-- Center the content in the column -->
+                    <a href="methodology.html">
+                        <h7>ABOUT THE PROJECT</h7>
+                    </a>
+                    <p style="margin-top: 10px;"><small>&copy; Copyright 2023 The Vanderbilt Hustler</small></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ids.js"></script>
+</body>
+</html>

@@ -1,0 +1,659 @@
+/*
+    CSS STYLES
+    These are the default styles for the buildout.
+*/
+
+/* natural box model */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+/* UTILITIES */
+/* hides an element on screen, but not from screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* COLORS */
+/* Use color variables so it's easier to change colors later */
+/* Will create a warning in the W3C CSS validator */
+/* Ignore that - CSS variables are fine to use */
+:root {
+    --footer: #F2EEE3;
+    --gray: rgb(0, 0, 0, 0.1);
+}
+
+/*
+    TYPOGRAPHY
+*/
+p {
+    font-family: 'Georgia', serif;
+    font-weight: 300;
+    font-size: 12px;
+    justify-content: left;
+
+
+}
+h1, h2, h3, h11, .bylines p, footer p {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 850;
+}
+h1, h2, h11 {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 80%;
+    color: white;
+}
+h1, h11 { /* first headline */
+    padding: 35vh 0 0.75em;
+    font-size: 128px;
+}
+
+
+h2 { /* second headline */
+    padding: 20vh 0 0.75em;
+    font-family: 'Georgia', serif;
+    font-size: 45px;
+    font-weight: 700;
+    font-style: italic;
+    margin-top: -2.2em; /* Adjust the value to move the text up */
+    line-height: 1; /* Reduce line height to bring the text up */
+    padding: 0; /* Reset padding to remove any extra space */
+}
+h3 { /* section header */
+    font-size: 28px;
+    line-height: 30px;
+    margin: 1.3em 0 0.55em;
+    font-size: bold;
+}
+
+h4 { /* subheadline */
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+}
+
+h5 { /* box head */
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    font-size: bold;
+    color: #D6B464;
+
+}
+
+h6 { /* footer1*/
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+
+}
+
+h7 { /* footer2 */
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #D6B464;
+    margin-top: 100px;
+
+}
+
+h8 { /* footer2 */
+    font-family: 'Georgia', serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 18px;
+    text-align: center;
+    color: black;
+    font-style: italic;
+
+}
+
+h9 { /* navbar */
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    top: 5.8px;
+}
+
+h10 { /* text box head */
+    font-weight: 700; /* Bold */
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    color: #D6B464;
+}
+
+p { /* body copy */
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+
+}
+.bylines p { /* bylines */
+    font-size: 14px;
+    line-height: 1;
+    margin: 0.0em;
+}
+.bylines div p:nth-child(even) { /* adjust spacing for subbylines */
+    margin-bottom: 0.6em;
+}
+.bylines div:after { /* add horizontal lines btwn byline divs */
+    content: "";
+    border: 1px solid var(--gray);
+    width: 100%;
+    height: 0;
+    display: block;
+    margin: 1.0em 0;
+}
+.related { /* related tag */
+    padding: 1.0em 0;
+    font-size: 0.95em;
+}
+.related span {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+footer {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+}
+.section-break { /* three asterisks */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    letter-spacing: 25px;
+    text-align: center;
+}
+
+
+/* 
+    HEADER
+*/
+header {
+    background-size: cover;
+    height: 100vh; /* makes image same height as screen */
+}
+/* navbar */
+nav {
+    color: black; /* Set your desired text color */
+    position: fixed;
+    width: 100%;
+    z-index: 200;
+    background-color: #F2EEE3; /* Set your initial background color */
+    border: 2px solid #F2EEE3; /* This adds a black border to the bottom of the nav */
+    padding-top: -0.5px;
+}
+
+
+
+nav li {
+    list-style-type: none;
+    white-space: nowrap;
+}
+
+nav li a {
+    margin: 0 0.5em;
+    color: #F2EEE3; /* Set your desired text color */
+    text-decoration: none;
+}
+
+nav ul {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; /* This will evenly distribute the items horizontally */
+    align-items: center; /* This will vertically center align the items */
+    flex-flow: row wrap;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+li.logo p {
+    display: inline; /* Display the text inline with the logo */
+    margin-left: 10px; /* Adjust the spacing as needed */
+    margin-top: 5px; /* Adjust the margin-top to move the text down */
+
+}
+
+/* styles for li items makes the spacing/alignment work on the menu */
+/* also allows the responsive menu toggler behavior */
+li.logo {
+    margin-right: auto; /* put the logo on the left */
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+li.logo img {
+    width: 50px;
+    padding-right: 5px;
+}
+li.logo span {
+    display: none;
+    -webkit-transition: 1s; /* For Safari 3.1 to 6.0 */
+    transition: 1s;
+}
+li.item {
+    font-size: 18px;
+    text-align: left;
+}
+li.item a {
+    margin-top: 0em; /* Adjust this value to move the "ABOUT" text up */
+
+}
+li.toggle {
+    /* show menu bar (toggle class) */
+    display: block;
+    cursor: pointer;
+
+    margin-left: auto;
+    margin-right: 10px;
+    color: #F2EEE3;
+    font-size: 16px;
+}
+nav a {
+    /* so the ENTIRE item is clickable */
+    display: block;
+    
+    /* design choices */
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: #F2EEE3;
+    opacity: 0.9;
+}
+/* hide all list items **that aren't logo or toggle** */
+/*ul li:not(.logo):not(.toggle) {
+    display: none;
+}
+ul div {
+    display: none;
+}
+/* reveal hidden items (on toggle) 
+/* force this display to take precedence and be more "!important" 
+/* to display properly, also set the width to 100% 
+.show {
+    display: block !important;
+    width: 100%;
+    margin-bottom: 8px;
+} */
+
+/* DROPDOWN MENU
+*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #F2EEE3;
+    min-width: 160px;
+    z-index: 1;
+    top: 22px;
+
+}
+
+/* Show Dropdown Content on Hover and on Click */
+.item.dropdown:hover .dropdown-content,
+.item.dropdown.click:focus .dropdown-content {
+    display: block;
+}
+
+.item.dropdown {
+    margin-left: auto; /* Push "THE SURVEY" to the right */
+    margin: 10; /* Reset margins */
+    padding: 0; /* Reset paddings */
+    top: 0px;
+}
+
+@media screen and (max-width: 480px) {
+    .item.dropdown {
+        display: none; /* or any other styling for hiding */
+    }
+}
+
+/* Add some style to the dropdown links */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    z-index: 1;
+    top: 50px; /* Adjust this value to move the dropdown content down */
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: rgba(214, 180, 100, 0.4); /* Adjusted alpha value to 0.8 */
+}
+
+
+/* 
+    ARTICLE ALIGNMENT (flexbox added in larger view widths)
+*/
+article:first-child {
+    padding-top: 5%;
+}
+section p:first-child {
+    margin-top: 0;
+}
+.bylines {
+    padding-top: 6.5px;
+}
+
+.chart-container {
+    max-width: 500px;
+    margin: 0 auto; /* This will center the container if its width is less than the parent container */
+}
+
+/* 
+    PHOTOS
+*/
+img {
+    display: block;
+    width: 100%;
+}
+figcaption {
+    margin-top: 2px;
+    font-size: 14px;
+    font-family: sans-serif;
+    line-height: 20px;
+}
+.big-image {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.small-image {
+    width: 100%;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    display: inline-block;
+}
+.wide-right {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+    margin-right: -40%;
+    float: right;
+    width: 80%;
+}
+.wide-left {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-right: 25px;
+    margin-left: -40%;
+    float: left;
+    width: 80%;
+    text-align: left;
+}
+/* youtube embed styles 
+.embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%; 
+} 
+.embed-container iframe, .embed-container object, .embed-container embed { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}*/
+/* pulled quotes */
+.pull-quote-center {
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.quote {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Georgia', serif;
+    font-weight: 300;
+}
+.attribute {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: grey;
+    margin-top: 0;
+    text-align: center;
+}
+
+/*
+    LINKS
+*/
+/* default link styles */
+a:link, a:visited {
+    color:#D6B464;
+    text-decoration: none;
+    border-bottom: 0.125em solid #D6B464;
+}
+a:hover, a:active {
+    color: #D6B464;
+    border-bottom: none;
+}
+/* navbar social icons */
+nav li a:link, nav li a:visited {
+    color: black;
+    text-decoration: none;
+    border-bottom: none;
+}
+nav li a:hover, nav li a:active {
+    color: #D6B464;
+    text-decoration: none;
+    border-bottom: none;
+}
+/* byline links */
+.bylines a:link, .bylines a:active {
+    color: #D6B464;
+    text-decoration: none;
+    border-bottom: none;
+}
+.bylines a:hover, .bylines a:visited {
+    color: #D6B464;
+    text-decoration: underline;
+    border-bottom: none;
+}
+
+/*
+    FOOTER
+*/
+footer {
+    background-color: var(--footer);
+    padding: 30px 0 15px;
+    margin-top: 3.0em;
+}
+
+/* 
+    ADVERTISEMENTS
+*/
+.ad {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-family: 'Inter';
+}
+.ad-caption {
+    text-align: center; 
+    font-size: 12px; 
+    padding-top: 15px; 
+    font-family: 'Inter', sans-serif; 
+    text-transform: uppercase;
+}
+.ad-block {
+    margin-top: 10px; padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.ad-code {
+    padding-bottom: 30px;
+}
+
+.graph-container {
+    width: 100%; /* or specify a fixed width in pixels */
+    height: auto; /* or specify a fixed height in pixels */
+    /* other styles */
+}
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 400px) { 
+    h1 { /* first headline */
+        padding: 35vh 0 0.75em;
+        font-size: 50px;
+        line-height: 50px;
+        overflow-wrap: break-word;
+    }
+
+    h2 { /* second headline */
+        padding: 10vh 0 0.75em;
+        margin-top: -5em; /* Adjust the value to move the text up */
+        font-size: 15px;
+    }
+
+    h5 { /* box head */
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 23px;
+        text-align: center;
+        color: #D6B464;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 401px) and (max-width: 768px) {
+    .chart-container {
+        max-width: 300px;
+        margin: 0 auto; /* This will center the container if its width is less than the parent container */
+    }
+
+    h1 { /* first headline */
+        padding: 35vh 0 0.75em;
+        font-size: 50px;
+        line-height: 50px;
+        overflow-wrap: break-word;
+    }
+
+    h2 { /* second headline */
+        padding: 10vh 0 0.75em;
+        margin-top: -5em; /* Adjust the value to move the text up */
+        font-size: 20px;
+    }
+
+    h5 { /* box head */
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 23px;
+        text-align: center;
+        color: #D6B464;
+    }
+
+    h9 { /* navbar */
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 18px;
+        text-align: left;
+        margin-left: 0; /* Potential issue: Missing 'px' or other unit */
+        padding-left: 0;  /* If you want to ensure it's against the left edge, set padding-left to 0 */
+    }
+
+    nav {
+        padding-top: 0px;
+        max-width: 100%;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 10px;
+        display: flex;
+        justify-content: left; /* This will evenly distribute the items horizontally */
+        align-items: left; /* This will vertically center align the items */
+        flex-flow: row nowrap; /* Prevents items from wrapping onto the next line */
+        -webkit-align-items: center;
+    }
+
+    li.item a {
+        margin-top: 0em; /* Adjust this value to move the "ABOUT" text up */
+    
+    }
+
+    .item.dropdown {
+        display: flex;            /* Make it a flex container */
+        justify-content: left; /* Distribute items equally between edges */
+        align-items: center;      /* Center items vertically */
+        margin-right: 10px;       /* Add some right margin */
+        margin-left: 0px; /* Push "THE SURVEY" to the right */
+        margin: 0px;
+        /* Additional styles as needed */
+    }
+
+    li.item {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    /* photos */
+    .big-image {
+        width: 160%;
+        padding-bottom: 30px;
+        padding-top: 20px;
+        margin-right: 30%;
+        margin-left: -30%;
+        display: inline-block;
+    }
+    /* pulled quotes */
+    .pull-quote-center {
+        width: 130%;
+        margin-left: -15%;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    .quote {
+        font-size: 28px;
+        line-height: 37px;
+        margin-bottom: 0px;
+        text-align: center;
+        font-style: italic;
+        font-family: 'Georgia', serif;
+        font-weight: 300;
+    }
+    .attribute {
+        font-size: 18px;
+        padding-top: 5px;
+        font-family: 'Inter', sans-serif;
+        color: grey;
+        margin-top: 0;
+        text-align: center;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
