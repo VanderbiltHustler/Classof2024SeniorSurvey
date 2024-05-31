@@ -12,7 +12,7 @@
 header {
     /* add header image below */
     /* can use a file path before the photo is uploaded to ceo */
-    background: url('https://iili.io/JAQZh2s.jpg" alt="JAY4ZPV.jpg'); 
+    background: url('https://iili.io/JQNCXUv.jpg" alt="A student stands and waves with their back to the camera at Commencement.'); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center; /* adjusts image placement, can also be set as percentages */
@@ -141,8 +141,14 @@ No media query for `xs` since this is the default */
 
 
 /* Large devices (desktops, 992px and up) */
-/*@media (min-width: 992px) {
-
+@media (min-width: 992px) {
+  #lifestyle-box {
+    margin-right: -105px;
+  }
+  
+  #postgrad-box{
+    margin-left: -105px;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
