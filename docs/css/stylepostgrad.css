@@ -7,24 +7,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top; /* adjusts image placement, can also be set as percentages */
-  
 
-    /* note: there are many alternative ways to style the header
-        other than a photo and 2 headlines. 
-
-        Here are some other IDS examples, you can inspect the code to 
-        see how they did it: 
-
-        Headlines that fade in: http://specials.idsnews.com/iu-kappa-kappa-gamma-sorority-hazing-big-little/
-        Header with a video: http://specials.idsnews.com/bloomington-bluebird-bar-coronavirus-guidelines/
-        Animated header: http://specials.idsnews.com/iu-president-michael-mcrobbie-speeches-gpt-2/
-        Another animated/fade-in header: http://specials.idsnews.com/steve-moore-almost-died-coronavirus-bloomington/
-        Header with multiple photos: http://specials.idsnews.com/what-wasnt-said-racism-indiana-university-bloomington-iu/
-        Dramatic photo header: http://specials.idsnews.com/iu-coronavirus-testing/
-        Cute animation header: http://specials.idsnews.com/will-your-mail-in-ballot-arrive-in-time-to-count-usps-election-2020/index.html
-        Cool typography (from W+P): http://specials.idsnews.com/a-little-less-than-kind-iu-theater-bloomington/index.html
-        Not full width header: http://specials.idsnews.com/how-iu-does-its-laundry/
-    */
 }
 
 /* SET ANY MORE STYLES YOU WANT HERE: */
