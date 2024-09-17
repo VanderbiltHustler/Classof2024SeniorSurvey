@@ -16,7 +16,7 @@ Published: 3/21/2024 <br>
 - Writing | Salma Elhandaoui, Rhea Patney, Chloe Whalen
 - Web Design | Coco Louie, Katherine Oung
 
-This project is inspired by survey and web development projects created by the [Princetonian](https://projects.dailyprincetonian.com/frosh-survey-25/index.html), [The Duke Chronicle](https://www.dukechronicle.com/article/2022/01/duke-university-chronicle-first-year-survey-meet-class-of-2025-demographic-race-gender-income), [The Indiana Daily Student](https://specials.idsnews.com/afghanistan-taliban-visa-asylum-immigration-bloomington/) and [The Harvard Crimson](https://features.thecrimson.com/2021/freshman-survey/). Thank you to the Vanderbilt LAPOP Lab for survey methodology advice.
+This project utilizes [Normalize.css](https://necolas.github.io/normalize.css/) and [Bootstrap](https://getbootstrap.com/). It is inspired by survey and web development projects created by the [Princetonian](https://projects.dailyprincetonian.com/frosh-survey-25/index.html), [The Duke Chronicle](https://www.dukechronicle.com/article/2022/01/duke-university-chronicle-first-year-survey-meet-class-of-2025-demographic-race-gender-income), [The Indiana Daily Student](https://specials.idsnews.com/afghanistan-taliban-visa-asylum-immigration-bloomington/) and [The Harvard Crimson](https://features.thecrimson.com/2021/freshman-survey/). Thank you to the Vanderbilt LAPOP Lab for survey methodology advice.
 
 ## Powered by The Vanderbilt Hustler Data Team
 For questions, comments or curiosities: 
