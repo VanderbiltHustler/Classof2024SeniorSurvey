@@ -4,6 +4,30 @@ Published: 3/21/2024 <br>
 
 ## Directory
 ```bash
+.
+└── docs
+    ├── css
+    │   ├── main.css
+    │   ├── normalize.css
+    │   ├── stylecollegelife.css
+    │   ├── styledemographics.css
+    │   ├── stylehome.css
+    │   ├── stylelifestyle.css
+    │   ├── stylemethodology.css
+    │   ├── stylepolitics.css
+    │   └── stylepostgrad.css
+    ├── js
+    │   └── script.js
+    ├── college-life.html
+    ├── demographics.html
+    ├── index.html
+    ├── lifestyle.html
+    ├── methodology.html
+    ├── politics.html
+    └── post-grad.html
+
+4 directories, 17 files
+
 ```
 
 ## Deployment History
